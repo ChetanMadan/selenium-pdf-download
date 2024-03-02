@@ -1,0 +1,85 @@
+{
+  "id": "44a79c96-f136-4f32-b550-c8863f4fec07",
+  "version": "2.0",
+  "name": "MSR",
+  "url": "https://delhihighcourt.nic.in/",
+  "tests": [{
+    "id": "6595c20f-08a3-46a5-a56b-1fdfe982a8ca",
+    "name": "get_pdf",
+    "commands": [{
+      "id": "6324b274-215c-4521-9473-7448b7142143",
+      "comment": "",
+      "command": "open",
+      "target": "https://delhihighcourt.nic.in/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10b5d08a-5a02-406d-b9a8-6033c8f6732c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "944x1072",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76fbc910-1f99-45e2-ba71-e7b959b155ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=#heading4 > .btn",
+      "targets": [
+        ["css=#heading4 > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[6]", "xpath:attributes"],
+        ["xpath=//div[@id='heading4']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cause List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68e14996-d706-4adc-a026-1253766e475c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=PDF Cause List",
+      "targets": [
+        ["linkText=PDF Cause List", "linkText"],
+        ["css=#collapse4 li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'PDF Cause List')]", "xpath:link"],
+        ["xpath=//div[@id='collapse4']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://delhihighcourt.nic.in/reports/cause_list/current')]", "xpath:href"],
+        ["xpath=//div[8]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'PDF Cause List')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52be9d0b-9739-4fef-a3b6-22798fa2065b",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) img",
+      "targets": [
+        ["css=tr:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='ADVANCE CAUSE LIST OF CASES FOR 04.03.2024']", "xpath:img"],
+        ["xpath=//div[@id='MainContent']/div[3]/table/tbody/tr/td[4]/a/img", "xpath:idRelative"],
+        ["xpath=//td[4]/a/img", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win9321",
+      "windowTimeout": 2000
+    }, {
+      "id": "ca1e41bf-95ba-4c1e-a9f5-8cf7103c226c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win9321}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "06d1ce80-0845-4681-87a1-6e9c2bd1dcdd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://delhihighcourt.nic.in/"],
+  "plugins": []
+}
